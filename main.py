@@ -210,13 +210,6 @@ async def send_admin(msg: types.Message, state: FSMContext):
     await msg.answer("Bosh Sahifaga o'tish", reply_markup=startBtn)
     await state.reset_state()
 
-
-# @dp.message_handler(text='Ha')
-# async def send_admin(msg: types.Message):
-#     print(msg.from_user.id)
-#     await bot.send_message()
-
-
 async def start_up(dp):
     await dp.bot.set_my_commands(
         [
