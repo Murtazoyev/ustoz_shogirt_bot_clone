@@ -29,7 +29,7 @@ class Anketa(StatesGroup):
     confirm = State()
 
 
-@dp.message_handler(commands='start')
+@dp.(commands='start')
 async def start(msg: types.Message):
     await msg.answer(f"""AssalomU alaykum
 UstozShogird kanalining rasmiy botiga xush kelibsiz!
